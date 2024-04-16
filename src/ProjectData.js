@@ -1,5 +1,6 @@
 export const projectData = [
     {
+        id: 1,
         projectName: "Project A",
         pmName: "John Doe",
         projectStatus: "In Progress",
@@ -20,6 +21,7 @@ export const projectData = [
         }
     },
     {
+        id: 2,
         projectName: "Project B",
         pmName: "Jane Smith",
         projectStatus: "Completed",
@@ -40,6 +42,7 @@ export const projectData = [
         }
     },
     {
+        id: 3,
         projectName: "Project C",
         pmName: "Bob Johnson",
         projectStatus: "On Hold",
@@ -60,6 +63,7 @@ export const projectData = [
         }
     },
     {
+        id: 4,
         projectName: "Project D",
         pmName: "Alice Davis",
         projectStatus: "In Progress",
@@ -80,6 +84,7 @@ export const projectData = [
         }
     },
     {
+        id: 5,
         projectName: "Project E",
         pmName: "Charlie Brown",
         projectStatus: "Completed",
@@ -100,6 +105,7 @@ export const projectData = [
         }
     },
     {
+        id: 6,
         projectName: "Project F",
         pmName: "Lucy Van Pelt",
         projectStatus: "In Progress",
@@ -120,6 +126,7 @@ export const projectData = [
         }
     },
     {
+        id: 7,
         projectName: "Project G",
         pmName: "Linus Van Pelt",
         projectStatus: "On Hold",
@@ -140,6 +147,7 @@ export const projectData = [
         }
     },
     {
+        id: 8,
         projectName: "Project H",
         pmName: "Sally Brown",
         projectStatus: "Completed",
@@ -160,6 +168,7 @@ export const projectData = [
         }
     },
     {
+        id: 9,
         projectName: "Project I",
         pmName: "Peppermint Patty",
         projectStatus: "In Progress",
@@ -180,6 +189,7 @@ export const projectData = [
         }
     },
     {
+        id: 10,
         projectName: "Project J",
         pmName: "Marcus",
         projectStatus: "Completed",
@@ -200,6 +210,7 @@ export const projectData = [
         }
     },
     {
+        id: 11,
         projectName: "Project K",
         pmName: "Marcy",
         projectStatus: "In Progress",
@@ -220,6 +231,7 @@ export const projectData = [
         }
     },
     {
+        id: 12,
         projectName: "Project L",
         pmName: "Franklin",
         projectStatus: "On Hold",
@@ -240,6 +252,7 @@ export const projectData = [
         }
     },
     {
+        id: 13,
         projectName: "Project M",
         pmName: "Woodstock",
         projectStatus: "Completed",
@@ -260,6 +273,7 @@ export const projectData = [
         }
     },
     {
+        id: 14,
         projectName: "Project N",
         pmName: "Snoopy",
         projectStatus: "In Progress",

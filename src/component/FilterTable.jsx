@@ -61,14 +61,18 @@ const FilterTable = ({ searchTerm, selectedTab, onSelectedRow }) => {
     const handleSelectAll = (event) => {
         if (event.target.checked) {
             setSelectedRows(projectData.map((row) => row.id));
+            onSelectedRow(projectData.map((row) => row.id))
         } else {
             setSelectedRows([]);
+            onSelectedRow([])
         }
     };
 
     const handleSelect = (id) => {
         if (selectedRows.includes(id)) {
             setSelectedRows(selectedRows.filter((rowId) => rowId !== id));
+            onSelectedRow(selectedRows.filter((rowId) => rowId !== id))
+
         } else {
             setSelectedRows([...selectedRows, id]);
             onSelectedRow([...selectedRows, id])
@@ -144,7 +148,7 @@ const FilterTable = ({ searchTerm, selectedTab, onSelectedRow }) => {
                                         </TableCell>
                                         <TableCell>{row.lastUpdate}</TableCell>
                                         <TableCell><Chip label={row.totalResources} color="primary" size="small" sx={{ background: "#e9edf5", color: '#464f60' }} /></TableCell>
-                                        <TableCell>{`${row.projectTimeline.start_date} > ${row.projectTimeline.end_date}`}</TableCell>
+                                        <TableCell><Chip label={row.projectTimeline.start_date} color="primary" size="small" sx={{ background: "#e9edf5", color: '#464f60' }} /> &gt; <Chip label={row.projectTimeline.end_date} color="primary" size="small" sx={{ background: "#e9edf5", color: '#464f60' }} /></TableCell>
                                         <TableCell>{`US ${row.estimation.budget}`}</TableCell>
                                     </TableRow>
                                     <Collapse in={openRows.includes(row.id)} timeout="auto" unmountOnExit>
